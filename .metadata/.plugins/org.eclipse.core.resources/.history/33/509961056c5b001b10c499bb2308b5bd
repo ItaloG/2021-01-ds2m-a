@@ -1,0 +1,27 @@
+package br.com.meu.italo.model;
+
+public class Circunferencia {
+	private double raio;
+	private double perimetro;
+
+	
+	public void valorRaio(double raio) {
+		if (raio > 0) {
+			this.raio += raio;
+		} else {
+			System.out.println("Seu valor é inválido");
+		}
+	}
+	
+	public void perimetro() {
+		double valorPerimetro = 2*3.14*this.raio;
+		
+		perimetro += valorPerimetro;
+	}
+	
+	public void mostrarResultado() {
+		System.out.println(perimetro);
+	}
+	
+	
+}

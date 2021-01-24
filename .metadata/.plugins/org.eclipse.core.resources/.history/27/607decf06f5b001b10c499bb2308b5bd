@@ -1,0 +1,42 @@
+package br.com.meu.italo.model;
+
+import java.util.Scanner;
+
+public class Circunferencia {
+	Scanner ler = new Scanner(System.in);
+	
+	private double raio;
+	private double perimetro;
+	
+	//public void teste() {
+	//	double valor = ler.nextDouble();
+	//	this.raio += valor;
+	//}
+	
+	//public double getRaio() {
+	//	return this.raio;
+	//}
+	
+	
+	public void valorRaio() {
+		System.out.println("Digite o valor do Raio: ");
+		double valor = ler.nextDouble();
+		raio += valor;
+	}
+	
+	public double getRaio() {
+		return raio;
+	}
+	
+	public void cauculoPerimetro() {
+		double valorPerimetro = 2*3.14*raio;
+		
+		perimetro += valorPerimetro;
+	}
+	
+	public void mostrarResultado() {
+		System.out.println("Seu resultado é: " + perimetro);
+	}
+	
+	
+}

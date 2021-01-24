@@ -1,0 +1,92 @@
+package br.com.meu.italo.model;
+
+import java.util.Scanner;
+
+public class Exercicios {
+	Scanner ler = new Scanner(System.in);
+	
+	//perimetro
+	private double raio;
+	private double perimetro;
+	
+	//idade
+	private double idade; 
+	
+	//retangulo
+	private double base;
+    private double altura;
+	
+	
+	
+	//public void teste() {
+	//	double valor = ler.nextDouble();
+	//	this.raio += valor;
+	//}
+	
+	//public double getRaio() {
+	//	return this.raio;
+	//}
+	
+		public void valorRaio() {
+		System.out.print("Digite o valor do Raio: ");
+		double valor = ler.nextDouble();
+		if (valor > 0) {
+			raio += valor;
+		} else {
+			System.out.println("Valor inválido");
+		}
+		
+	}
+	
+	public double getRaio() {
+		return raio;
+	}
+	
+	public void cauculoPerimetro() {
+		double valorPerimetro = 2*3.14*raio;
+		
+		perimetro += valorPerimetro;
+	}
+	
+	public void mostrarResultado() {
+		System.out.println("Seu resultado é: " + perimetro);
+	}
+	
+	//*************************************************************
+	
+	public void idade() {
+		System.out.print("Digite sua idade: ");
+		double valorIdade = ler.nextDouble();
+		idade += valorIdade;
+		
+	
+	}
+	
+	public void calcularIdade() {
+
+		if (idade > 0) {
+			double segundos = idade*365*24*60*60;
+			System.out.println("Sua idade em segundos :" + segundos);	
+		} else {
+			System.out.println("Idade inválida!!");
+		}
+	}
+
+	//*************************************************************
+	
+	public void medidasRetangulo(){
+		System.out.println("Digite a altura do rentangulo: ");
+		double valorAltura = ler.nextDouble();
+		altura += valorAltura;
+		
+		System.out.println("Digite a base do retangulo: ");
+		double valorBase = ler.nextDouble();
+		base += valorBase;
+	}
+	
+	public void calculoretangulo() {
+		double area = base*altura;
+	    System.out.println("Área :" + area);
+	}
+	
+}

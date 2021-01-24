@@ -1,0 +1,17 @@
+package br.com.meu.ital;
+
+import br.com.meu.italo.model.Exercicios;
+
+public class Aplicacao {
+	public static void main(String[] args) {
+		
+		Exercicios perimetro = new Exercicios();
+		
+		perimetro.valorRaio();
+		perimetro.cauculoPerimetro();
+		perimetro.mostrarResultado();
+		
+		
+		
+	}
+}
